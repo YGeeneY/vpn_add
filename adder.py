@@ -6,7 +6,7 @@ import sys
 try:
     CLIENT = sys.argv[1]
 except IndexError:
-    CLIENT = input('Enter a client nickname: ')
+    CLIENT = raw_input('Enter a client nickname: ')
 
 OPEN_VPN_RSA = '/etc/openvpn/easy-rsa/2.0/'
 OPEN_VPN_ROOT = '/etc/openvpn/'
